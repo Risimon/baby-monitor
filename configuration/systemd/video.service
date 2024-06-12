@@ -1,11 +1,11 @@
 [Unit]
-Description=FruitNanny video service
+Description=Baby monitor video service
 After=network.target
 
 [Service]
 User=pi
 Type=simple
-ExecStart=/opt/fruitnanny/bin/video.sh
+ExecStart=/opt/baby-monitor/bin/video.sh
 LimitNOFILE=65536
 Restart=always
 KillSignal=SIGTERM
