@@ -1,12 +1,12 @@
 [Unit]
-Description=FruitNanny app service
+Description=FBabay monitor app service
 After=network.target
 
 [Service]
-User=pi
+User=admin 
 Type=simple
 ExecStart=/usr/bin/node server/app.js
-WorkingDirectory=/opt/fruitnanny
+WorkingDirectory=/opt/baby-monitor
 LimitNOFILE=65536
 Restart=always
 KillSignal=SIGTERM
